@@ -1,0 +1,153 @@
+.about-us {
+    background-color: blue;
+    color: white;
+    width: 100%;
+    height: 100dvh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.about-left {
+  width: 70%;
+  padding: 30px;
+}
+.about-right {
+  width: 25%;
+}
+.about-us-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #49a6f3;
+    text-align: center;
+    border-bottom: 6px solid #49a6f3;
+}
+.about-us-text {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.btn-joinus {
+  display: inline-block;
+  background-color: #49a6f3;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5%;
+}
+.btn-joinus:hover {
+  background-color: #2f7eb8;
+}
+.about-us-img {
+  margin-right: 5%;
+  width: 400px;
+  animation: rotate 8s linear infinite; 
+}
+.about-us-img2, .about-us-img3, .about-us-img4 {
+  display: none;
+  animation: rotate 8s linear infinite; 
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); 
+  }
+  to {
+    transform: rotate(360deg); 
+  }
+}
+
+/* -- MEDIA QUERY --- */
+
+@media (max-width: 1400px) {
+  .about-left {
+    width: 100%;
+  }
+  .about-right {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .about-us-img {
+    width: 50px;
+  }
+  .about-us-img2{
+    display: block;
+    animation: rotate 8s linear infinite; 
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+  }
+  .about-us-img3 {
+    display: block;
+    animation: rotate 8s linear infinite; 
+    width: 70px;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+  }
+  .about-us-img4 {
+    display: block;
+    animation: rotate 8s linear infinite; 
+    width: 80px;
+    position: absolute;
+    top: 2px;
+    left: 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-us {
+    flex-direction: column;
+  }
+  .about-left {
+    width: 100%;
+  }
+  .about-right {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .btn-joinus {
+    width: 25%;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-us {
+    height: 80vh;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 50px;
+  }
+  .about-us-title {
+    font-size: 1.5rem;
+  }
+  .about-us-text {
+    font-size: 0.9rem;
+  }
+  .btn-joinus {
+    width: 50%;
+  }
+  .about-us-img {
+    width: 40px;
+  }
+  .about-us-img2 {
+    width: 50px;
+  }
+  .about-us-img3 {
+    width: 60px;
+  }
+  .about-us-img4 {
+    width: 70px;
+    top: 8px;
+  }
+}

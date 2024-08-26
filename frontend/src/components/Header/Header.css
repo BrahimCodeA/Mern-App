@@ -1,0 +1,234 @@
+.navbar {
+    width: 100%;
+    background: blue;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.container {
+    margin: 0 5%;
+    display: flex;
+    align-items: center; 
+}
+.links-active a{
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-right: 50%; 
+    background: linear-gradient(1deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+}
+.nav-links .links a.active {
+    color: #007bff; 
+    font-weight: bold; 
+    border-bottom: 2px solid #1084ff; 
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+    margin: 0 auto;
+}
+.links a {
+    font-size: 1.4em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links a:hover {
+    color: #007bff;
+    font-weight: bold;
+}
+.nav-links .links a .btn-signin {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: bold;
+    background: #49a6f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links .links a .btn-signup {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: bold;
+    background: blue;
+    border: 2px solid #49a6f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-logout {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.7em;
+    font-weight: bold;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.btn-profile {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 0.9em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    transition: .3s;
+}
+.nav-links .links a.actived {
+    border-radius: 5px;
+    border: 2px solid #1084ff; 
+}
+.btn-profile:hover {
+    border-radius: 3px;
+    border: 2px solid #1084ff; 
+}
+.img-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.btn-logout:hover {
+    background: rgb(87, 87, 87);
+    color: white;
+}
+button {
+  width: 200px; 
+  height: 50px;
+}
+
+.cart-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+  
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 12px;
+}
+
+.nav-links .links a .btn-signup:hover {
+    background: #49a6f3;
+    color: white;
+}
+.nav-links .links a .btn-signin:hover {
+    background: blue;
+    color: white;
+    border: 2px solid rgb(73, 166, 243);
+}
+.menu {
+    display: none;
+}
+
+/* ---- MEDIA QUERY --- */
+
+@media (max-width:1400px) {
+    .links a {
+        font-size: 1.1em;
+    }
+    button {
+        width: 160px; 
+        height: 50px;
+      }
+
+}
+
+@media (max-width:1200px) {
+    .menu {
+        position: fixed;
+        right: 30px;
+        z-index: 10;
+        display: block;
+        cursor: pointer;
+        top: 30px;
+    }
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -350px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 100%;
+        transition: right 0.5s;
+        background: blue;
+    }
+    .nav-links.active {
+        right: 0;
+        z-index: 10;
+    }
+    .btn-profile {
+        flex-direction: column;
+    }
+    .btn-profile:hover {
+        border: none;
+    }
+    .nav-links .links a.actived {
+        border: none; 
+    }
+    .btn-profile:hover {
+        border: none; 
+    }
+}
+
+
+@media (max-width:800px) {
+    .menu {
+        position: fixed;
+        right: 30px;
+        z-index: 10;
+        display: block;
+        cursor: pointer;
+        top: 30px;
+    }
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -350px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 190px;
+        height: 100%;
+        transition: right 0.5s;
+        background: blue;
+        font-size: 0.8em;
+    }
+    .nav-links.active {
+        right: 0;
+    }
+
+    button {
+        width: 140px; 
+        height: 40px;
+    }
+}

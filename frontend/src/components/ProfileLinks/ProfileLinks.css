@@ -1,0 +1,58 @@
+.user-post-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      gap: 20px;
+      font-size: 1.8em;
+      font-weight: bold;
+}
+.profile-active {
+      background-color: blue;
+      padding: 0 5px;
+      border-radius: 5px;
+      border-bottom: 4px solid #49a6f3;
+}
+.link-cours:hover {
+        border-bottom: 4px solid #49a6f3;
+}
+.link-profile:hover {
+        border-bottom: 4px solid #49a6f3;
+}
+.links-icon {
+      font-size: 0.8em;
+      color: #49a6f3;
+      margin-left: 5px;
+}
+.user-post-links a {
+      color: #49a6f3; 
+      width: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+/* --- MEDIA QUERY --- */
+@media (max-width: 800px) {
+      .user-post-links {
+            font-size: 1.5em;
+      }
+      .links-icon {
+            font-size: 0.6em;
+      }
+      .user-post-links a {
+            width: 200px;
+      }
+}
+
+@media (max-width:500px) {
+      .user-post-links {
+            font-size: 1.1em;
+      }
+      .links-icon {
+            font-size: 0.7em;
+      }
+      .user-post-links a {
+            width: 150px;
+      }
+}
+

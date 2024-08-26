@@ -1,0 +1,101 @@
+.profile-cours-container {
+    min-height: 100vh;
+}
+.profile-cours {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.profile-cours-img {
+    width: 150px;
+}
+.profile-cours-img:hover {
+    background-color: blue;
+    padding: 3px;
+    cursor: pointer;
+}
+.profile-cours-item {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+.profile-cours-ul {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.profile-cours-li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+    border-right: 1px solid black;
+    height: 80px;
+    padding: 50px;
+    width: 200px;
+    max-width: 300px;
+}
+.profile-cours-icon {
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+.profile-cours-li:last-child {
+    border-right: none;
+}
+.profile-cours-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+.profile-cours-date {
+    font-size: 15px;
+}
+
+/* --- MEDIA QUERY --- */
+
+@media (max-width: 1200px) {
+    .profile-cours-li {
+        padding: 0px;
+        width: 100px;
+        border: none;
+        margin-right: 10px;
+    }
+    .profile-cours-img {
+        width: 100px;
+    }
+    .profile-cours-icon {
+        font-size: 20px;
+    }
+    .profile-cours-title {
+        font-size: 15px;
+    }
+    .profile-cours-date {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .profile-cours {
+        margin: 20px auto;
+    }
+    .profile-cours-li {
+        padding: 0px;
+        width: 90%;
+        border: none;
+        margin-right: 30px;
+    }
+    .profile-cours-img {
+        width: 50px;
+    }
+    .profile-cours-icon {
+        font-size: 16px;
+    }
+    .profile-cours-title {
+        font-size: 10px;
+    }
+    .profile-cours-date {
+        font-size: 10px;
+    }
+}

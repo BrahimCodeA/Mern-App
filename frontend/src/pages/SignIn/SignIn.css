@@ -1,0 +1,105 @@
+.form-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.pixabay.com/photo/2012/03/04/00/03/jellyfish-21741_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.form {
+    width: 95%;
+    max-width: 500px;
+    padding: 20px;
+    background: transparent;
+    border: 2px solid #49a6f3;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.form-titre {
+    width: 70%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: white;
+    background: linear-gradient(1deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    font-weight: bold;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.form-span {
+    color: #49a6f3;
+}
+.form-span:hover {
+    color: white;
+}
+label {
+    display: flex;
+    color: white;
+}
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.email-icon {
+    position: absolute;
+    color: #49a6f3;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.password-icon {
+    position: absolute;
+    color: #49a6f3;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-40%);
+    cursor: pointer;
+}
+input {
+    display: flex;
+    color: black;
+    border-radius: 5px;
+    border: 3px solid #49a6f3;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background: #49a6f3;;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 100%;
+}
+.form:hover {
+    border: 2px solid white;
+}
+.form-btn:hover {
+    background: #49a6f37d;
+}
+.form-link {
+    color: white;
+    display: inline-block;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+

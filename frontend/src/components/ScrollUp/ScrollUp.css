@@ -1,0 +1,33 @@
+.scrollup {
+    position: fixed;
+    right: 2.5em;
+    bottom: -20%;
+    background: #49a6f3;
+    color: white;
+    opacity: 0.8;
+    padding: 5px;
+    border-radius: 0.2em;
+    z-index: 2;
+    transition: .4s;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scrollup:hover {
+    background: rgb(1, 1, 146);
+}
+.show-scroll {
+    bottom: 3em;
+    transition: 0.5s;
+}
+@media (max-width:800px) {
+    .scrollup {
+        right: 2em;
+    }
+    .scrollup img {
+        width: 20px;
+    }
+}

@@ -1,0 +1,184 @@
+.bibliotheque-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: blue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(226, 223, 223, 0.941);
+    position: relative;
+  }
+  
+.bibliotheque-title {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.bibliotheque-delete {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: white;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.bibliotheque-delete:hover {
+    background-color: rgb(247, 59, 59);
+    transform: translateY(-2px);
+    border-bottom: 5px solid white;
+}
+
+.icon-delete {
+    font-size: 1.2rem;
+}
+
+.loading, .error, .empty {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #888;
+    margin-top: 50px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+  
+.bibliotheque-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+  
+.bibliotheque-link {
+  display: block;
+  position: relative;
+}
+.bibliotheque-post {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.bibliotheque-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.bibliotheque-content {
+    padding: 15px;
+}
+.play-button {
+  cursor: pointer;
+}  
+.bibliotheque-post-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+  
+.bibliotheque-date, .bibliotheque-category {
+    display: block;
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+  
+.bibliotheque-category {
+    font-weight: bold;
+    color: #555;
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.icon-dele {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+    color: red;
+    cursor: pointer;
+}
+  
+
+/* --- MEIDA QUERY --- */
+
+@media screen and (max-width: 900px) {
+    .bibliotheque-title {
+      font-size: 2rem;
+    }
+    .bibliotheque-delete {
+      top: 20px;
+      right: 20px;
+      font-size: 0.7em;
+      margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .loading, .error, .empty {
+      font-size: 1rem;
+    }
+    .bibliotheque-title {
+      font-size: 1.1rem;
+    }
+    .bibliotheque-posts {
+      gap: 10px;
+    }
+    .bibliotheque-image {
+      height: 100px;
+    }
+    .overlay {
+      height: 100px;
+    }
+    .bibliotheque-post-title {
+      font-size: 1rem;
+    }
+    .bibliotheque-date, .bibliotheque-category {
+      font-size: 0.8rem;
+    }
+    .bibliotheque-category {
+      padding: 3px 5px;
+    }
+    .bibliotheque-delete {
+      top: 15px;
+      right: 15px;
+      height: 20px;
+      font-size: 0.2em;
+      margin-left: 5px;
+    }
+    .icon-delete {
+        width: 10px;
+    }
+}

@@ -1,0 +1,331 @@
+.container-btn {
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+.search-container {
+  position: relative;
+  width: 100%;
+  margin: 20px;
+}
+.search-input {
+  width: 100%;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  background-color: #fafafa;
+  transition: background-color 0.3s, border 0.3s;
+  width: 100%;
+  padding: 15px;
+  height: 40px;
+  font-size: 1em;
+}
+.search-input:focus {
+  background-color: #fff;
+  border-color: #007BFF;
+  outline: none;
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.search-icon {
+  position: absolute;
+  cursor: pointer;
+  color: #007BFF;
+  left: 15px;
+  font-size: 1em;
+}
+
+.create-product-btn {
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #007BFF;
+  position: relative;
+  width: 100%;
+  max-width: 100px;
+  margin: 25px;
+  border: none;
+  height: 40px;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.create-product-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+.create-product-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+}
+.create-icon {
+  margin-right: 5px;
+  font-size: 1.5em;
+}
+
+/*  Cours Modal */
+.modal-cours-form {
+  background: white; 
+  margin: 100px 20%;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #007BFF;
+
+}
+.modal-cours-titre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #007BFF;
+}
+.modal-cours-input {
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+  border: 2px solid #007BFF;
+  font-size: 0.7em;
+}
+.modal-cours-select {
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.7em;
+  cursor: pointer;
+  background: #007BFF;
+  color: white;
+  border: 2px solid white;
+}
+.modal-cours-textarea {
+  width: 100%;
+  height: 100px;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #49a6f3;
+  font-size: 0.7em;
+  resize: none;
+}
+.modal-cours-btn {
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-right: 5px;
+  cursor: pointer;
+  height: 40px;
+}
+.modal-cours-btn-delete {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-right: 5px;
+  cursor: pointer;
+  height: 40px;
+}
+.modal-cours-btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+.modal-cours-btn-delete:hover {
+  background: #b30000;
+  transform: translateY(-2px);
+}
+.modal-cours-file-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-cours-file {
+  margin-right: 5px;
+  padding: 5px;
+  height: 30px;
+  font-size: 0.6em;
+  width: 50%;
+  color: #0056b3;
+  font-weight: bold;
+}
+.modal-img {
+  left: -50%;
+  transform: translateX(50%);
+  width: 50%;
+  max-height: 200px;
+  border-radius: 10px;
+  border: 1px solid #007BFF;
+}
+
+.modal-btn-file {
+  margin-right: 5px;
+  padding: 5px;
+  height: 30px;
+  font-size: 0.7em;
+  width: 50%;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modal-btn-file:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+/* Fin du modal */
+/* Sidebar */
+
+.sidebar-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.sidebar .sidebar-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    gap: 10px;
+}
+.sidebar-link .sidebar-first {
+  display: flex;
+  gap: 10px;
+}
+.sidebar-link .sidebar-second {
+  display: flex;
+  gap: 10px;
+}
+
+.sidebar-img {
+    width: 30px;
+    margin-left: 5px;
+}
+.sidebar-links  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #49a6f3;
+    border-radius: 20px;
+    width: 220px;
+    margin: 5%;
+    padding: 5px;
+    cursor: pointer;
+}
+.sidebar-links.active {
+    background-color: #075ba0;
+}
+.sidebar-links:hover {
+    background-color: #075ba0;
+    transform: translateY(-2px);
+}
+.h {
+    background-color: red;
+}
+
+/* Fin de la sidebar */
+
+/* --- MEDIA QUERY --- */
+
+
+@media (max-width:1300px) {
+  .sidebar-link {
+    flex-direction: column;
+  }
+    .sidebar-links a {
+      width: 150px;
+      font-size: 0.8em;
+    }
+    .sidebar-img {
+      width: 25px;
+    }
+  }
+  
+
+@media (max-width: 490px) {
+  .search-input {
+    font-size: 0.6em;
+    margin-left: 5%;
+    height: 30px;
+  }
+  .search-icon {
+    font-size: 0.8em;
+    margin-left: 5px;
+  }
+  .create-product-btn {
+    width: 80px;
+    font-size: 0.7em;
+    padding: 10px;
+    height: 30px;
+  }
+  .modal-cours-form {
+    width: 90%;
+    margin: 30% 5%;
+  }
+  .modal-cours-titre {
+    font-size: 0.8em;
+  }
+  .modal-cours-input {
+    font-size: 0.6em;
+  }
+  .modal-cours-select {
+    font-size: 0.6em;
+  }
+  .modal-cours-textarea {
+    font-size: 0.6em;
+  }
+  .modal-cours-btn {
+    font-size: 0.8em;
+    height: 30px;
+  }
+  .modal-progess {
+    font-size: 0.5em;
+  }
+  .modal-img {
+    width: 100%;
+    transform: translateX(0);
+  }
+  .modal-cours-textarea {
+    height: 60px;
+  }
+  .modal-cours-btn-delete {
+    font-size: 0.8em;
+    height: 30px;
+  }
+  .modal-cours-file {
+    font-size: 0.5em;
+  }
+  .modal-btn-file {
+    font-size: 0.6em;
+  }
+  .modal-img {
+    max-height: 150px;
+  }
+  .sidebar-links  {
+    width: 120px;
+    font-size: 0.5em;
+  }
+  .sidebar-img {
+    width: 13px;
+  }
+}
+

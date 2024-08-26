@@ -1,0 +1,122 @@
+.hero {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-container {
+    flex-direction: column;
+    margin: 15% 5%;
+}
+.hero-titre {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.hero-span {
+    color: blue;
+}
+.hero-groupe-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+.hero-btn {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    background: blue;
+    margin-right: 20px;
+}
+.hero-btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    border: 2px solid blue;
+    font-weight: bold;
+    margin-right: 20px;
+    background: transparent;
+    color: blue;
+}
+.hero-btn:hover {
+    background: white;
+    color: blue;
+    border: 2px solid blue;
+}
+.hero-btn2:hover {
+    background: blue;
+    color: white;
+}
+
+/* --- MEDIA QUERY --- */
+
+@media screen and (max-width: 1400px) {
+    .hero-container {
+        margin: 20% 0;
+    }
+    .hero-titre {
+        font-size: 2rem;
+    }
+    .hero-text {
+        font-size: 1rem;
+    }
+    .hero-btn {
+        font-size: 0.8em;
+    }
+    .hero-btn2 {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hero-container {
+        margin: 20% 0;
+    }
+    .hero-titre {
+        font-size: 2rem;
+    }
+    .hero-text {
+        font-size: 1rem;
+    }
+    .hero-btn {
+        font-size: 0.8em;
+    }
+    .hero-btn2 {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .hero {
+        height: 80vh;
+    }
+    .hero-container {
+        margin: 20% 4%;
+    }
+    .hero-titre {
+        font-size: 1.1rem;
+    }
+    .hero-text {
+        font-size: 0.7rem;
+    }
+    .hero-btn {
+        font-size: 0.7em;
+    }
+    .hero-btn2 {
+        font-size: 0.7em;
+    }
+}

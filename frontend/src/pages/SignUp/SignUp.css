@@ -1,0 +1,79 @@
+.form-icon {
+    font-size: 20px;
+    margin-left: 5px;
+    color: white;
+}
+.form-error {
+    color: red;
+    font-size: 0.8em;
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-align: center;
+    background: black;
+}
+.username-signup-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.user-signup-icon {
+    position: absolute;
+    color: #49a6f3;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.email-signup-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.email-signup-icon {
+    position: absolute;
+    color: #49a6f3;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.password-signup-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.password-signup-icon {
+    position: absolute;
+    color: #49a6f3;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-40%);
+    cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+    .form-btn {
+        font-size: 1em;
+    }
+    .form-icon {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .form-btn {
+        font-size: 1.1em;
+    }
+    .form-icon {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .form-btn {
+        font-size: 0.9em;
+    }
+    .form-icon {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,127 @@
+.contact-body {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.pixabay.com/photo/2017/09/01/09/22/triangle-2703516_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.contact-container {
+    width: 1000px;
+    background-color: blue;
+    margin: 2% auto;
+    min-height: 500px;
+    text-align: center;
+    padding: 2%;
+    border: 10px solid #49a6f3;
+}
+.contact-title {
+    font-size: 2.5rem;
+    color: white;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    gap: 20px;
+}
+.contact-description {
+    font-size: 1rem;
+    color: #ffffffcf;
+    margin-bottom: 2%;
+}
+.contact-input {
+    font-size: 1em;
+    width: 50%;
+    padding: 1%;
+    margin: 1% 0;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 4px solid #49a6f3;
+}
+.contact-input::placeholder {
+    color: #49a6f3;
+}
+.contact-textarea {
+    resize: none;
+    width: 50%;
+    height: 100px;
+    padding: 1%;
+    font-size: 1em;
+    margin: 1% 0;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 4px solid #49a6f3;
+}
+.contact-textarea::placeholder {
+    color: #49a6f3;
+}    
+.contact-button {
+    font-size: 1em;
+    padding: 1%;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 3px solid #49a6f3;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-button:hover {
+    background-color: #1084ff;
+    border: none;
+}
+.contact-btn-icon {
+    font-size: 1rem;
+    margin-left: 5px;
+    color: white;
+}
+
+/* --- MEDIA QUERY --- */
+@media screen and (max-width: 1024px) {
+    .contact-container {
+        width: 90%;
+    }
+    .contact-input {
+        width: 80%;
+    }
+    .contact-textarea {
+        width: 80%;
+    }
+    .contact-button {
+        width: 80%;
+    }
+}
+
+@media (max-width:500px) {
+    .contact-container {
+        min-height: 400px;
+        margin: 10% auto;
+    }
+    .contact-title {
+        font-size: 1.8rem;
+    }
+    .contact-description {
+        font-size: 0.7rem;
+    }
+    .contact-input {
+        width: 90%;
+        font-size: 0.8em;
+    }
+    .contact-textarea {
+        width: 90%;
+        font-size: 0.8em;
+    }
+    .contact-button {
+        width: 90%;
+    }
+
+}
